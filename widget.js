@@ -345,9 +345,6 @@ function urunleriYukle() {
 }
 
 // ===== BAŞLAT =====
-var isMobile = window.innerWidth <= 480;
-urunleriYukle().then(function(){
-    if(!isMobile) setTimeout(teklifWidgetAc, 2000);
-});
+urunleriYukle();
 
 })();
