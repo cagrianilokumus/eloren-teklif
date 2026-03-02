@@ -140,12 +140,21 @@ var css = `
 @keyframes teklif-spin { to{transform:rotate(360deg)} }
 @media (max-width: 480px) {
     .teklif-widget {
-        width: 100%; max-width: 100vw; border-radius: 16px 16px 0 0;
-        bottom: 0; left: 0; transform: translateY(100%);
-        border: none; border-top: 1px solid #e5e5e5;
+        width: 92vw; max-width: 92vw; border-radius: 16px;
+        bottom: 70px; left: 4vw; transform: translateY(20px) scale(0.96);
+        border: 1px solid #e5e5e5; max-height: 75vh; overflow-y: auto;
     }
-    .teklif-widget.active { transform: translateY(0); }
-    .teklif-product-image img { max-height: 360px; }
+    .teklif-widget.active { transform: translateY(0) scale(1); }
+    .teklif-product-image img { max-height: 200px; }
+    .teklif-product-info { padding: 10px 12px 0; }
+    .teklif-product-name { font-size: 13px; margin-bottom: 6px; }
+    .teklif-price-current { font-size: 18px; }
+    .teklif-price-old { font-size: 12px; }
+    .teklif-actions { padding: 0 12px 10px; gap: 6px; }
+    .teklif-btn-primary, .teklif-btn-secondary { padding: 9px 12px; font-size: 12px; }
+    .teklif-dots { padding: 6px 0 10px; }
+    .teklif-footer { padding: 8px 12px; gap: 10px; }
+    .teklif-fab { bottom: 16px; left: 16px; }
 }
 `;
 
@@ -336,8 +345,9 @@ function urunleriYukle() {
 }
 
 // ===== BAŞLAT =====
+var isMobile = window.innerWidth <= 480;
 urunleriYukle().then(function(){
-    setTimeout(teklifWidgetAc, 2000);
+    if(!isMobile) setTimeout(teklifWidgetAc, 2000);
 });
 
 })();
