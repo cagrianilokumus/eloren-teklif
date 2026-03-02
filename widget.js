@@ -288,8 +288,19 @@ function sliderOlustur() {
     sliderEl.addEventListener('click', function(e){
         var primary = e.target.closest('.teklif-btn-primary');
         var secondary = e.target.closest('.teklif-btn-secondary');
-        if(primary) window.open(urunler[parseInt(primary.dataset.idx)].link, '_blank');
-        if(secondary) window.open(urunler[parseInt(secondary.dataset.idx)].link, '_blank');
+        var idx, urun, url;
+        if(primary) {
+            idx = parseInt(primary.dataset.idx);
+            urun = urunler[idx];
+            url = urun.link + (urun.link.indexOf('?') > -1 ? '&' : '?') + 'utm_source=website&utm_medium=widget&utm_campaign=' + encodeURIComponent(urun.isim);
+            window.open(url, '_blank');
+        }
+        if(secondary) {
+            idx = parseInt(secondary.dataset.idx);
+            urun = urunler[idx];
+            url = urun.link + (urun.link.indexOf('?') > -1 ? '&' : '?') + 'utm_source=website&utm_medium=widget&utm_campaign=' + encodeURIComponent(urun.isim);
+            window.open(url, '_blank');
+        }
     });
 
     // Swipe
