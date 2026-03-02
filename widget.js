@@ -182,7 +182,7 @@ root.innerHTML = '<button class="teklif-fab" id="teklifFab"><svg width="18" heig
 +   '<div class="teklif-dots" id="teklifDots"></div>'
 +   '<div class="teklif-footer">'
 +     '<div class="teklif-trust-item"><svg class="teklif-trust-icon" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5a2 2 0 01-2 2h0"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> \u00DCcretsiz Kargo</div>'
-+     '<div class="teklif-trust-item"><svg class="teklif-trust-icon" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg> Kolay \u0130ade</div>'
++     '<div class="teklif-trust-item"><svg class="teklif-trust-icon" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg> Ayn\u0131 G\u00FCn Kargo</div>'
 +     '<div class="teklif-trust-item"><svg class="teklif-trust-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> G\u00FCvenli \u00D6deme</div>'
 +   '</div>'
 + '</div>';
