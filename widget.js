@@ -141,7 +141,7 @@ var css = `
 @media (max-width: 480px) {
     .teklif-widget {
         width: 92vw; max-width: 92vw; border-radius: 16px;
-        bottom: 70px; left: 4vw; transform: translateY(20px) scale(0.96);
+        bottom: 90px; left: 4vw; transform: translateY(20px) scale(0.96);
         border: 1px solid #e5e5e5; max-height: 75vh; overflow-y: auto;
     }
     .teklif-widget.active { transform: translateY(0) scale(1); }
